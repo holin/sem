@@ -1,5 +1,6 @@
 Sem::Application.routes.draw do
   resources :posts
+  resources :jobs
 
   get "home/index"
   root :to => "posts#index"

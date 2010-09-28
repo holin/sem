@@ -38,7 +38,10 @@ GEM
       activesupport (>= 2.3.6)
       mime-types
       treetop (>= 1.4.5)
+    mechanize (1.0.0)
+      nokogiri (>= 1.2.1)
     mime-types (1.16)
+    nokogiri (1.4.3.1)
     polyglot (0.3.1)
     rack (1.2.1)
     rack-mount (0.6.13)
@@ -64,10 +67,13 @@ GEM
     treetop (1.4.8)
       polyglot (>= 0.3.1)
     tzinfo (0.3.23)
+    will_paginate (3.0.pre)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  mechanize
   rails (= 3.0.0.rc2)
   sqlite3-ruby
+  will_paginate (= 3.0.pre)
