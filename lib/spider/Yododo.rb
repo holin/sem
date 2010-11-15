@@ -16,7 +16,7 @@ module Spider
       # raise page.methods.sort.join("\n")
 
 
-      login_form.field_with(:name => "user.email").value = "holin.he@gmail.com"
+      login_form.field_with(:name => "user.email").value = "lvyouji@lvyouji.com"
       login_form.field_with(:name => "user.password").value = "heweilin" 
 
       
