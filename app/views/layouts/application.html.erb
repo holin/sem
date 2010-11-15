@@ -8,10 +8,21 @@
 	<!--[if lt IE 8]><link rel="stylesheet" href="/stylesheets/ie.css" type="text/css" media="screen, projection"><![endif]-->
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
+	
 </head>
 <body style="background: #f1f1f1;">
 
 <div class="container">
+	<div id="header">
+		<ul class="nav">
+			<li><a href="/posts">软文列表</a></li>
+			<li><a href="/posts">帐号</a></li>
+			<li><a href="/posts">论坛</a></li>
+			<li><a href="/posts">博客</a></li>
+			<li><a href="/posts">微博</a></li>
+		</ul>
+	</div>
+	<hr class="space" />
 	<%= yield %>
 </div>
 

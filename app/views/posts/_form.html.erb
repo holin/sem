@@ -1,3 +1,8 @@
+<script type="text/javascript" charset="utf-8">
+	$(function(){
+		new nicEditor({fullPanel : true, iconsPath : '/images/nicEditorIcons.gif'}).panelInstance('post_content');
+	});
+</script>
 <%= form_for(@post) do |f| %>
   <% if @post.errors.any? %>
     <div id="error_explanation">
@@ -13,11 +18,11 @@
 
   <div class="field">
     <%= f.label :title %><br />
-    <%= f.text_field :title %>
+    <%= f.text_field :title, :class => "text" %>
   </div>
   <div class="field">
     <%= f.label :content %><br />
-    <%= f.text_area :content %>
+		<div class="whitebg"><%= f.text_area :content, :style => "width:100%" %></div> 
   </div>
   <div class="actions">
     <%= f.submit %>

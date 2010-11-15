@@ -1,2 +1,13 @@
 table.list {border:1px solid #586681;}
 table.list th {color:white;background:#667796;}
+
+ul.nav {margin:0;padding:0;margin-top:5px;}
+ul.nav li {list-style:none;padding-right:15px;;float:left;}
+ul.nav li a:hover {background:#fff;}
+ul.nav li a {font-size:1.2em;padding:2px 6px;}
+
+
+h1.title {font-size:18px;font-weight:bold;margin:10px 0;}
+
+hr.space {margin:0;}
+.whitebg {background:#fff;margin:0;} 
