@@ -1,9 +1,6 @@
 rails_root = "#{File.dirname(__FILE__)}/.."
 require "#{rails_root}/config/environment"
-require "#{rails_root}/lib/spider/base" 
-Find.find("#{rails_root}/lib/spider") do |path|
-  require path if path =~ /\.rb$/
-end
+require "#{rails_root}/lib/spiders"  
 
 log = Logger.new("#{rails_root}/log/job_runner.log")
 

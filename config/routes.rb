@@ -1,4 +1,6 @@
 Sem::Application.routes.draw do
+  resources :sites
+
   resources :accounts
 
   resources :posts

@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @site.name %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%= @site.url %>
+</p>
+
+<p>
+  <b>Worker:</b>
+  <%= @site.worker %>
+</p>
+
+<p>
+  <b>Kind:</b>
+  <%= @site.kind %>
+</p>
+
+
+<%= link_to 'Edit', edit_site_path(@site) %> |
+<%= link_to 'Back', sites_path(:kind => @site.kind) %>
