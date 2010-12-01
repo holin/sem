@@ -6,6 +6,7 @@
     <th>Email</th>
     <th>密码</th>
     <th>网站</th>
+    <th>说明</th>
     <th></th>
     <th></th>
     <th></th>
@@ -17,6 +18,7 @@
     <td><%= account.email %></td>
     <td><%= account.password %></td>
     <td><%= account.url %></td>
+    <td><%= account.memo %></td>
     <td><%= link_to 'Show', account %></td>
     <td><%= link_to 'Edit', edit_account_path(account) %></td>
     <td><%= link_to 'Destroy', account, :confirm => 'Are you sure?', :method => :delete %></td>
