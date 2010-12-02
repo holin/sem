@@ -17,7 +17,7 @@
     <td><%= account.name %></td>
     <td><%= account.email %></td>
     <td><%= account.password %></td>
-    <td><%= account.url %></td>
+    <td><%= link_to account.url, account.url, :target => '_blank' %></td>
     <td><%= account.memo %></td>
     <td><%= link_to 'Show', account %></td>
     <td><%= link_to 'Edit', edit_account_path(account) %></td>
