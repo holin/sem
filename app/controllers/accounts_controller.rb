@@ -2,7 +2,7 @@ class AccountsController < ApplicationController
   # GET /accounts
   # GET /accounts.xml
   def index
-    @accounts = Account.paginate(:page => params[:page], :per_page => 20, :order => "id desc")
+    @accounts = Account.paginate(:page => params[:page], :per_page => 20, :order => "id asc")
 
     respond_to do |format|
       format.html # index.html.erb

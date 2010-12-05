@@ -2,6 +2,7 @@
 
 <table class="list">
   <tr>
+    <th>ID</th>
     <th>用户名</th>
     <th>Email</th>
     <th>密码</th>
@@ -14,6 +15,7 @@
 
 <% @accounts.each do |account| %>
   <tr>
+    <td><%= account.id %></td>
     <td><%= account.name %></td>
     <td><%= account.email %></td>
     <td><%= account.password %></td>
