@@ -7,7 +7,7 @@
     <th>Email</th>
     <th>密码</th>
     <th>网站</th>
-    <th>可发外链</th>
+    <th>Worker</th>
     <th>说明</th>
     <th></th>
     <th></th>
@@ -22,6 +22,7 @@
     <td><%= account.password %></td>
     <td><%= link_to account.url, account.url, :target => '_blank' %></td>
     <td><%= account.can_link ? "<span style='color:red'>是</span>".html_safe : "否" %></td>
+    <td><%= account.worker %></td>
     <td><%= account.memo %></td>
     <td><%= link_to 'Show', account %></td>
     <td><%= link_to 'Edit', edit_account_path(account) %></td>
