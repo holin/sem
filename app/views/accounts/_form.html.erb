@@ -28,6 +28,10 @@
 		<%= f.text_field :url, :class => "text" %>
 	</div>
 	<div class="field">
+		<%= f.label :can_link, "可发外链" %><br />
+		<%= f.check_box :can_link, :class => "text" %>
+	</div>
+	<div class="field">
 		<%= f.label :memo, "说明" %><br />
 		<%= f.text_field :memo, :class => "text" %>
 	</div>
