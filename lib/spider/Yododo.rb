@@ -1,3 +1,4 @@
+require "#{File.dirname(__FILE__)}/base"
 module Spider
   class Yododo < Base
     # return agent

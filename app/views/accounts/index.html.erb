@@ -23,7 +23,7 @@
     <td><%= account.password %></td>
     <td><%= link_to account.url, account.url, :target => '_blank' %></td>
     <td><%= account.can_link ? "<span style='color:red'>是</span>".html_safe : "否" %></td>
-    <td><%= account.worker %></td>
+    <td><%= account.worker.present? ? (link_to account.worker, work_account_path(account)) : "" %></td>
     <td><%= account.memo %></td>
     <td><%= link_to 'Show', account %></td>
     <td><%= link_to 'Edit', edit_account_path(account) %></td>

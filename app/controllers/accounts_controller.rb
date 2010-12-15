@@ -1,4 +1,13 @@
 class AccountsController < ApplicationController
+  def work
+    @account = Account.find(params[:id])
+    start_at = Time.now
+    
+    @account.run_worker
+    
+    render :text => "done at #{Time.now}, used #{Time.now - start_at}"
+  end
+  
   # GET /accounts
   # GET /accounts.xml
   def index

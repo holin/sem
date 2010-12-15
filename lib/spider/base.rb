@@ -1,7 +1,8 @@
 module Spider
   class Base 
-    attr_accessor :browser, :log
-    def initialize(opt = {})
+    attr_accessor :browser, :log, :account
+    def initialize(account)
+      @account = account
       rails_root = "#{File.dirname(__FILE__)}/../.."
       @log = Logger.new("#{rails_root}/log/job_runner.log")
     end

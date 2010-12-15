@@ -1,7 +1,11 @@
 Sem::Application.routes.draw do
   resources :sites
 
-  resources :accounts
+  resources :accounts do
+    member do
+      get :work
+    end
+  end
 
   resources :posts
   resources :jobs
