@@ -27,7 +27,7 @@ module Spider
     
     def check_in
       puts "check in"
-      arr = %w(我来签到了，加威望阿，呵呵 坚持 努力，签到！ 我又来了)
+      arr = %w(我来签到了:lol，加威望阿，呵呵 坚持 努力，签到！:$ 我又来了:victory:)
       page = browser.get("http://www.hupub.com/thread-33431-1-1.html")
       form = page.forms.last
       form.message = arr[rand(arr.size)]
