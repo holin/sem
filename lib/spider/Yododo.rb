@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 require "#{File.dirname(__FILE__)}/base"
 module Spider
   class Yododo < Base

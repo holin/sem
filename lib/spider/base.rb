@@ -15,5 +15,13 @@ module Spider
       raise "run method"
     end
     
+    def cache
+      @cache ||= {}
+    end
+    
+    def skip_me
+      rand > 0.6
+    end
+    
   end
 end
