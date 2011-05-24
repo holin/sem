@@ -1,4 +1,5 @@
 # Load the rails application
+require 'find'
 require File.expand_path('../application', __FILE__)
 
 # Initialize the rails application

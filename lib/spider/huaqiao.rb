@@ -151,13 +151,8 @@ class String
   end
 end
 
-s = "搞笑".utf8_to_gb2312
-require 'uri'
-puts URI.escape(s)
-"http://index.baidu.com/main/word.php?word=%B8%E3%D0%A6"
-
 if __FILE__ == $0
   require "#{File.dirname(__FILE__)}/../../config/environment"
-  # Spider::Huaqiao.new(Account.last).login.run
-  Spider::Huaqiao.new(Account.last).login.post_blog
+  Spider::Huaqiao.new(Account.last).login.run
+  # Spider::Huaqiao.new(Account.last).login.post_blog
 end
